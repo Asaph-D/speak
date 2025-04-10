@@ -5,10 +5,6 @@ dist/
 # Modèles Vosk (à re-télécharger si besoin)
 models/
 
-# Cache PyInstaller (optionnel)
-__pycache__/
-*.spec
-
 # Environnements virtuels
 venv/
 .env/
