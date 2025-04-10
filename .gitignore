@@ -1,0 +1,18 @@
+# Fichiers PyInstaller
+build/
+dist/
+
+# Modèles Vosk (à re-télécharger si besoin)
+models/
+
+# Cache PyInstaller (optionnel)
+__pycache__/
+*.spec
+
+# Environnements virtuels
+venv/
+.env/
+
+# Autres fichiers inutiles à versionner
+*.log
+*.pyc

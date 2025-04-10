@@ -1,0 +1,168 @@
+[
+    {
+        "label": "customtkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "customtkinter",
+        "description": "customtkinter",
+        "detail": "customtkinter",
+        "documentation": {}
+    },
+    {
+        "label": "sounddevice",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sounddevice",
+        "description": "sounddevice",
+        "detail": "sounddevice",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "queue",
+        "description": "queue",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "pyttsx3",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "pyttsx3",
+        "description": "pyttsx3",
+        "detail": "pyttsx3",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "Model",
+        "importPath": "vosk",
+        "description": "vosk",
+        "isExtraImport": true,
+        "detail": "vosk",
+        "documentation": {}
+    },
+    {
+        "label": "KaldiRecognizer",
+        "importPath": "vosk",
+        "description": "vosk",
+        "isExtraImport": true,
+        "detail": "vosk",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "tempfile",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tempfile",
+        "description": "tempfile",
+        "detail": "tempfile",
+        "documentation": {}
+    },
+    {
+        "label": "mult",
+        "kind": 2,
+        "importPath": "mult",
+        "description": "mult",
+        "peekOfCode": "def mult(n):\n    for i in range(1,13):\n        print(i,\" x \", n,\" = \", i*n)\nwhile True:\n    var = int(input('enter a number : \\t'))\n    if var > 0 :\n        break\nmult(var)",
+        "detail": "mult",
+        "documentation": {}
+    },
+    {
+        "label": "VoiceRecognitionApp",
+        "kind": 6,
+        "importPath": "speak",
+        "description": "speak",
+        "peekOfCode": "class VoiceRecognitionApp:\n    def __init__(self, root):\n        self.root = root\n        self.root.title(\"MultiLingual Voice Assistant\")\n        self.root.geometry(\"900x600\")\n        # Handle icon for both dev and compiled versions\n        try:\n            icon_path = resource_path(\"icon.ico\")\n            if os.path.exists(icon_path):\n                self.root.iconbitmap(icon_path)",
+        "detail": "speak",
+        "documentation": {}
+    },
+    {
+        "label": "resource_path",
+        "kind": 2,
+        "importPath": "speak",
+        "description": "speak",
+        "peekOfCode": "def resource_path(relative_path):\n    \"\"\"Get absolute path to resource, works for dev and for PyInstaller\"\"\"\n    try:\n        # PyInstaller creates a temp folder and stores path in _MEIPASS\n        base_path = sys._MEIPASS\n    except Exception:\n        base_path = os.path.abspath(\".\")\n    path = os.path.join(base_path, relative_path)\n    # For PyInstaller, we might need to look in different places for different files\n    if not os.path.exists(path) and hasattr(sys, '_MEIPASS'):",
+        "detail": "speak",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "speak",
+        "description": "speak",
+        "peekOfCode": "def main():\n    root = ctk.CTk()\n    app = VoiceRecognitionApp(root)\n    root.mainloop()\nif __name__ == \"__main__\":\n    main()",
+        "detail": "speak",
+        "documentation": {}
+    }
+]
